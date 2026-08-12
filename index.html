@@ -41,29 +41,26 @@
 <template id="__bundler_thumbnail" data-bg-color="#101a49">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
     <rect width="1200" height="800" fill="#101a49"/>
-    <text x="600" y="410" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="180" fill="#f2f3ee" font-style="italic">HiyaChu</text>
-    <rect x="540" y="470" width="120" height="3" fill="#6f88d8"/>
+    <rect x="540" y="398" width="120" height="3" fill="#6f88d8"/>
   </svg>
 </template>
 </head>
 <body>
-<div id="splash" style="position: fixed; inset: 0; z-index: 9999; background: #101a49; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(16px,5vw,24px); animation: splashOut .8s ease 4.8s forwards;">
-  <div class="serif" style="font-size: clamp(52px,15vw,100px); color: #f2f3ee; font-style: italic; line-height: 1; animation: splashIn .9s ease both;">HiyaChu</div>
-  <div class="mincho" style="font-size: clamp(20px,6vw,32px); letter-spacing: .5em; color: #6f88d8; padding-left: .5em; animation: splashIn .9s ease .15s both;">群青</div>
+<div id="splash" style="position: fixed; inset: 0; z-index: 9999; background: #101a49; display: flex; align-items: center; justify-content: center; animation: splashOut .8s ease 4.8s forwards;">
+  <img src="uploads/gunjo-logo.png" alt="HIYACHU BAR Gunjyo" style="width: min(78vw, 460px); height:auto; animation: splashIn 1s ease both;">
 </div>
 <div style="background: #eef0ea;">
 
   <!-- ============ HERO ============ -->
   <section style="position: relative; min-height: 100svh; display: flex; flex-direction: column; justify-content: center; color: #f2f3ee; padding: clamp(96px,16vw,120px) clamp(24px,7vw,64px) clamp(48px,10vw,80px); overflow: hidden;">
-    <img src="uploads/storefront-min.jpg" alt="西荻窪 HiyaChu 店頭" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: heroA 12s ease-in-out infinite;">
-    <img src="uploads/hero-eyecatch-min.jpg" alt="冷やし中華" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: heroB 12s ease-in-out infinite;">
+    <img src="uploads/hero-counter-min.jpg" alt="HIYACHU BAR 群青 のカウンター" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: heroA 12s ease-in-out infinite;">
+    <img src="uploads/hero-bowl-min.jpg" alt="ひやちゅう" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: heroB 12s ease-in-out infinite;">
     <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,26,73,.72) 0%, rgba(16,26,73,.58) 40%, rgba(11,18,58,.9) 100%);"></div>
     <div style="position: absolute; top: clamp(22px,6vw,34px); left: 0; right: 0; text-align: center; z-index: 3;" class="eyebrow">
       <span style="animation: fade 1.2s ease both;">西荻窪 · 冷やし中華専門店</span>
     </div>
     <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center;">
-      <img src="uploads/logo.png" alt="HiyaChu — Cold noodle" class="rise1" style="height: clamp(58px,15vw,88px); width: auto; border-radius: 4px; box-shadow: 0 18px 48px rgba(0,0,0,.4); margin-bottom: clamp(30px,7vw,44px);">
-      <h1 class="serif rise2" style="font-weight: 500; font-size: clamp(46px, 12vw, 104px); line-height: .95; letter-spacing: -.01em;">Chilled ramen,<br><em style="font-style: italic; color: #b9c6ef;">all year</em> round.</h1>
+            <h1 class="serif rise2" style="font-weight: 500; font-size: clamp(46px, 12vw, 104px); line-height: .95; letter-spacing: -.01em;">Chilled ramen,<br><em style="font-style: italic; color: #b9c6ef;">all year</em> round.</h1>
       <div class="rise3" style="width: 60px; height: 2px; background: #6f88d8; margin: clamp(26px,6vw,34px) 0; transform-origin: center; animation: drawline .9s ease .7s both;"></div>
       <p class="rise3" style="max-width: 30ch; font-size: clamp(14px,3.6vw,16px); line-height: 1.9; color: #dbe1f2; font-weight: 300;">一年中、冷たいものだけを。NYからの逆輸入、西荻窪の2階の隠れ家。</p>
       <div class="mincho rise4" style="margin-top: clamp(26px,6vw,36px); font-size: clamp(14px,3.8vw,16px); letter-spacing: .14em; color: #f2f3ee;">ひやちゅう / 群青</div>
@@ -100,25 +97,41 @@
       </div>
 
       <div style="margin-top: clamp(44px,9vw,64px); border-top: 1px solid #c9cdc2; padding-top: clamp(28px,6vw,36px);">
-        <div class="eyebrow" style="color:#7a86ad; text-align:center;">Pop-up history · 海外POP-UP実績</div>
-        <div class="bowls-grid" style="margin-top: clamp(22px,5vw,30px);">
-          <div>
-            <div class="serif" style="font-size: clamp(24px,5.6vw,32px); color:#17204d;">New York</div>
-            <div class="mincho" style="font-size: clamp(12px,3.2vw,13px); letter-spacing:.12em; color:#7a86ad; margin-top:4px;">ニューヨーク</div>
-            <ul style="list-style:none; margin-top:14px; display:flex; flex-direction:column; gap:9px;">
-              <li style="display:flex; gap:12px; align-items:baseline; font-size: clamp(14px,3.8vw,15px); color:#303a63;"><span style="color:#6f88d8;">·</span> 2016年 8/2 – 8/27</li>
-              <li style="display:flex; gap:12px; align-items:baseline; font-size: clamp(14px,3.8vw,15px); color:#303a63;"><span style="color:#6f88d8;">·</span> 2017年 8/8 – 9/2</li>
-              <li style="display:flex; gap:12px; align-items:baseline; font-size: clamp(14px,3.8vw,15px); color:#303a63;"><span style="color:#6f88d8;">·</span> 2018年 8/28 – 9/15</li>
-            </ul>
-          </div>
-          <div>
-            <div class="serif" style="font-size: clamp(24px,5.6vw,32px); color:#17204d;">Jakarta, Indonesia</div>
-            <div class="mincho" style="font-size: clamp(12px,3.2vw,13px); letter-spacing:.12em; color:#7a86ad; margin-top:4px;">インドネシア・ジャカルタ</div>
-            <ul style="list-style:none; margin-top:14px; display:flex; flex-direction:column; gap:9px;">
-              <li style="display:flex; gap:12px; align-items:baseline; font-size: clamp(14px,3.8vw,15px); color:#303a63;"><span style="color:#6f88d8;">·</span> 2025年 6/15</li>
-            </ul>
-          </div>
-        </div>
+        <div class="eyebrow" style="color:#7a86ad; text-align:center;">Pop-up history · 海外POP-UP</div>
+        <ul style="list-style:none; margin-top: clamp(18px,4.5vw,26px); border-top:1px solid #d4d7cd;">
+          <li style="display:grid; grid-template-columns:auto 1fr; gap: clamp(14px,4vw,20px); align-items:baseline; padding: clamp(14px,3.6vw,18px) 0; border-bottom:1px solid #d4d7cd;">
+            <span class="serif" style="font-size: clamp(21px,5.2vw,26px); color:#6f88d8;">2016</span>
+            <span>
+              <span class="serif" style="display:block; font-size: clamp(17px,4.4vw,21px); color:#17204d;">New York, USA</span>
+              <span class="mincho" style="display:block; font-size: clamp(12px,3.2vw,13px); letter-spacing:.08em; color:#7a86ad; margin-top:5px;">アメリカ・ニューヨーク</span>
+              <span style="display:block; font-size: clamp(13px,3.5vw,14px); color:#303a63; margin-top:7px;">RAMEN LAB by Sun Noodle</span>
+            </span>
+          </li>
+          <li style="display:grid; grid-template-columns:auto 1fr; gap: clamp(14px,4vw,20px); align-items:baseline; padding: clamp(14px,3.6vw,18px) 0; border-bottom:1px solid #d4d7cd;">
+            <span class="serif" style="font-size: clamp(21px,5.2vw,26px); color:#6f88d8;">2017</span>
+            <span>
+              <span class="serif" style="display:block; font-size: clamp(17px,4.4vw,21px); color:#17204d;">New York, USA</span>
+              <span class="mincho" style="display:block; font-size: clamp(12px,3.2vw,13px); letter-spacing:.08em; color:#7a86ad; margin-top:5px;">アメリカ・ニューヨーク</span>
+              <span style="display:block; font-size: clamp(13px,3.5vw,14px); color:#303a63; margin-top:7px;">RAMEN LAB by Sun Noodle</span>
+            </span>
+          </li>
+          <li style="display:grid; grid-template-columns:auto 1fr; gap: clamp(14px,4vw,20px); align-items:baseline; padding: clamp(14px,3.6vw,18px) 0; border-bottom:1px solid #d4d7cd;">
+            <span class="serif" style="font-size: clamp(21px,5.2vw,26px); color:#6f88d8;">2018</span>
+            <span>
+              <span class="serif" style="display:block; font-size: clamp(17px,4.4vw,21px); color:#17204d;">New York, USA</span>
+              <span class="mincho" style="display:block; font-size: clamp(12px,3.2vw,13px); letter-spacing:.08em; color:#7a86ad; margin-top:5px;">アメリカ・ニューヨーク</span>
+              <span style="display:block; font-size: clamp(13px,3.5vw,14px); color:#303a63; margin-top:7px;">RAMEN LAB by Sun Noodle</span>
+            </span>
+          </li>
+          <li style="display:grid; grid-template-columns:auto 1fr; gap: clamp(14px,4vw,20px); align-items:baseline; padding: clamp(14px,3.6vw,18px) 0; border-bottom:1px solid #d4d7cd;">
+            <span class="serif" style="font-size: clamp(21px,5.2vw,26px); color:#6f88d8;">2025</span>
+            <span>
+              <span class="serif" style="display:block; font-size: clamp(17px,4.4vw,21px); color:#17204d;">Jakarta, Indonesia</span>
+              <span class="mincho" style="display:block; font-size: clamp(12px,3.2vw,13px); letter-spacing:.08em; color:#7a86ad; margin-top:5px;">インドネシア・ジャカルタ</span>
+              <span style="display:block; font-size: clamp(13px,3.5vw,14px); color:#303a63; margin-top:7px;">WISMA KEIAI</span>
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -199,6 +212,10 @@
         <figure style="margin:0; background:#e5e8e0; border-radius:5px; overflow:hidden;">
           <img loading="lazy" decoding="async" src="uploads/s-hamburg-min.jpg" alt="尾崎牛ハンバーグ" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover;">
           <figcaption style="padding: clamp(12px,3.5vw,16px) 12px clamp(14px,4vw,18px); text-align:center;"><div class="serif" style="font-size: clamp(18px,4.6vw,22px); color:#17204d;">Ozaki Beef Hamburg</div><div class="mincho" style="font-size:12px; letter-spacing:.1em; color:#7a86ad; margin-top:5px;">尾崎牛ハンバーグ</div></figcaption>
+        </figure>
+        <figure style="margin:0 auto; grid-column:1/-1; width:min(100%, calc(50% - clamp(6px,1.5vw,10px))); background:#e5e8e0; border-radius:5px; overflow:hidden;">
+          <img loading="lazy" decoding="async" src="uploads/s-lemon-min.jpg" alt="レモンワサビひやちゅう" style="display:block; width:100%; aspect-ratio:1/1; object-fit:cover;">
+          <figcaption style="padding: clamp(12px,3.5vw,16px) 12px clamp(14px,4vw,18px); text-align:center;"><div class="serif" style="font-size: clamp(18px,4.6vw,22px); color:#17204d;">Lemon &amp; Wasabi</div><div class="mincho" style="font-size:12px; letter-spacing:.1em; color:#7a86ad; margin-top:5px;">レモンワサビひやちゅう</div></figcaption>
         </figure>
       </div>
     </div>
